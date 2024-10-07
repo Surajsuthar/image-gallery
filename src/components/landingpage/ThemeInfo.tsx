@@ -9,13 +9,13 @@ const ThemeInfo = () =>{
              <div className="row-span-1 p-3">
               <BoxReveal boxColor={"#5046e6"} duration={0.5}>
                   <p className="text-[3.5rem] font-semibold">
-                    Coustimse <span className="text-[#5046e6]">.</span>
+                    Hello, Artist<span className="text-[#5046e6]">.</span>
                   </p>
                 </BoxReveal>
                 <BoxReveal boxColor={"#5046e6"} duration={0.5}>
                   <h2 className="mt-[.5rem] text-[2.5rem]">
-                    UI library for{" "}
-                    <span className="text-[#5046e6]">Design Engineers</span>
+                    Showcase your{" "}
+                    <span className="text-[#5046e6]">Art Portfolio</span>
                   </h2>
                 </BoxReveal>
                 <BoxReveal boxColor={"#5046e6"} duration={0.5}>

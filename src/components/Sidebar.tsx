@@ -1,29 +1,23 @@
-import { Shell } from 'lucide-react';
-import { PanelRightOpen } from 'lucide-react';
-import { PanelLeftOpen } from 'lucide-react';
-import { Airplay } from 'lucide-react';
-import { ChartColumnStacked } from 'lucide-react';
-import { useState } from 'react';
+import {
+  Tabs,
+  TabsContent,
+  TabsList,
+  TabsTrigger,
+} from "@/components/ui/tabs"
 
-const Sidebar = () => {
-    const [openPanel,setOpenPanel] = useState<Boolean>(true)
-    return (
-        <div className="flex flex-col justify-between min-h-screen min-w-[30px]">
-            <div className="flex flex-col gap-2">
-               <div className="flex justify-evenly">
-                    <Shell/>
-                    <p>Image Gallery</p>
-
-               </div>
-               <div>
-
-               </div>
-            </div>
-            <div>
-                {/* user details */}
-            </div>
-        </div>
-    )
+export function Nevigation() {
+  return (
+    <Tabs defaultValue="account" className="w-[400px]">
+      <TabsList className="grid w-full grid-cols-2 bg-slate-600">
+        <TabsTrigger value="account">Account</TabsTrigger>
+        <TabsTrigger value="password">Password</TabsTrigger>
+      </TabsList>
+      <TabsContent value="account">
+        Hello
+      </TabsContent>
+      <TabsContent value="password">
+        hello2
+      </TabsContent>
+    </Tabs>
+  )
 }
-
-export default Sidebar;

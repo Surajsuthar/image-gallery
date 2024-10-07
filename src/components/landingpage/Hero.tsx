@@ -1,6 +1,7 @@
 import { AnimatedText } from "./AnimatedLine";
 import { cn } from "@/lib/utils";
 import AnimatedGridPattern from "@/components/magicui/animated-grid-pattern";
+import { Button } from "@nextui-org/react";
 
 const Hero = () => {
     return (
@@ -17,8 +18,13 @@ const Hero = () => {
                     
                 </p>
             </div>
+            <div className="mt-6">
+                <Button className={cn("border rounded-xl hover:bg-white hover:text-black transition 100")}>
+                    Sing up
+                </Button>
+            </div>
             <AnimatedGridPattern
-                numSquares={30}
+                numSquares={100}
                 maxOpacity={0.1}
                 duration={3}
                 repeatDelay={1}

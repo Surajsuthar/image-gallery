@@ -1,4 +1,6 @@
+"use client"
 import LandingPage from "@/components/landingpage/Landingpage";
+
 
 export default function Home() {
   return (
